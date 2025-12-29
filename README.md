@@ -34,9 +34,9 @@
     Many-to-Many (User ↔ Course через Enrollment)
 
 ⚡ Быстрый старт
-1. Настройка БД
-bash
 
+
+```bash
 # PostgreSQL
 createdb learning_platform
 
@@ -45,10 +45,10 @@ docker run -d --name learning-postgres \
   -e POSTGRES_PASSWORD=postgres \
   -e POSTGRES_DB=learning_platform \
   -p 5432:5432 postgres:15
-
+```
 2. Запуск приложения
-bash
 
+```bash
 # Сборка
 mvn clean compile
 
@@ -57,13 +57,13 @@ mvn spring-boot:run -Dspring-boot.run.profiles=dev
 
 # Или
 java -jar target/*.jar --spring.profiles.active=dev
-
+```
 3. Тестирование
-bash
 
+```bash
 # Все тесты
 mvn test
-
+```
 
 📊 Что проверялось
 
@@ -83,8 +83,8 @@ mvn test
 
 
 📁 Структура
-text
 
+```text
 ormtask/
 ├── src/main/java/com/learning/platform/
 │   ├── model/          # JPA сущности
@@ -92,6 +92,7 @@ ormtask/
 │   ├── service/        # Бизнес-логика
 │   └── controller/     # REST API
 └── src/test/           # Тесты
+```
 
 🧪 Демо-данные
 
