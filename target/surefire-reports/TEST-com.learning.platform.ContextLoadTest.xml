@@ -1,0 +1,746 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.learning.platform.ContextLoadTest" time="3.477" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/pyegor/study/learning-platform/target/test-classes:/home/pyegor/study/learning-platform/target/classes:/home/pyegor/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/3.2.0/spring-boot-starter-data-jpa-3.2.0.jar:/home/pyegor/.m2/repository/org/springframework/boot/spring-boot-starter-aop/3.2.0/spring-boot-starter-aop-3.2.0.jar:/home/pyegor/.m2/repository/org/springframework/spring-aop/6.1.1/spring-aop-6.1.1.jar:/home/pyegor/.m2/repository/org/aspectj/aspectjweaver/1.9.20.1/aspectjweaver-1.9.20.1.jar:/home/pyegor/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/3.2.0/spring-boot-starter-jdbc-3.2.0.jar:/home/pyegor/.m2/repository/com/zaxxer/HikariCP/5.0.1/HikariCP-5.0.1.jar:/home/pyegor/.m2/repository/org/springframework/spring-jdbc/6.1.1/spring-jdbc-6.1.1.jar:/home/pyegor/.m2/repository/org/hibernate/orm/hibernate-core/6.3.1.Final/hibernate-core-6.3.1.Final.jar:/home/pyegor/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar:/home/pyegor/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/home/pyegor/.m2/repository/org/jboss/logging/jboss-logging/3.5.3.Final/jboss-logging-3.5.3.Final.jar:/home/pyegor/.m2/repository/org/hibernate/common/hibernate-commons-annotations/6.0.6.Final/hibernate-commons-annotations-6.0.6.Final.jar:/home/pyegor/.m2/repository/io/smallrye/jandex/3.1.2/jandex-3.1.2.jar:/home/pyegor/.m2/repository/com/fasterxml/classmate/1.6.0/classmate-1.6.0.jar:/home/pyegor/.m2/repository/net/bytebuddy/byte-buddy/1.14.10/byte-buddy-1.14.10.jar:/home/pyegor/.m2/repository/org/glassfish/jaxb/jaxb-runtime/4.0.4/jaxb-runtime-4.0.4.jar:/home/pyegor/.m2/repository/org/glassfish/jaxb/jaxb-core/4.0.4/jaxb-core-4.0.4.jar:/home/pyegor/.m2/repository/org/eclipse/angus/angus-activation/2.0.1/angus-activation-2.0.1.jar:/home/pyegor/.m2/repository/org/glassfish/jaxb/txw2/4.0.4/txw2-4.0.4.jar:/home/pyegor/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.2/istack-commons-runtime-4.1.2.jar:/home/pyegor/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar:/home/pyegor/.m2/repository/org/antlr/antlr4-runtime/4.10.1/antlr4-runtime-4.10.1.jar:/home/pyegor/.m2/repository/org/springframework/data/spring-data-jpa/3.2.0/spring-data-jpa-3.2.0.jar:/home/pyegor/.m2/repository/org/springframework/data/spring-data-commons/3.2.0/spring-data-commons-3.2.0.jar:/home/pyegor/.m2/repository/org/springframework/spring-orm/6.1.1/spring-orm-6.1.1.jar:/home/pyegor/.m2/repository/org/springframework/spring-context/6.1.1/spring-context-6.1.1.jar:/home/pyegor/.m2/repository/org/springframework/spring-tx/6.1.1/spring-tx-6.1.1.jar:/home/pyegor/.m2/repository/org/springframework/spring-beans/6.1.1/spring-beans-6.1.1.jar:/home/pyegor/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/home/pyegor/.m2/repository/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar:/home/pyegor/.m2/repository/org/springframework/spring-aspects/6.1.1/spring-aspects-6.1.1.jar:/home/pyegor/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.2.0/spring-boot-starter-web-3.2.0.jar:/home/pyegor/.m2/repository/org/springframework/boot/spring-boot-starter/3.2.0/spring-boot-starter-3.2.0.jar:/home/pyegor/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.2.0/spring-boot-starter-logging-3.2.0.jar:/home/pyegor/.m2/repository/ch/qos/logback/logback-classic/1.4.11/logback-classic-1.4.11.jar:/home/pyegor/.m2/repository/ch/qos/logback/logback-core/1.4.11/logback-core-1.4.11.jar:/home/pyegor/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.21.1/log4j-to-slf4j-2.21.1.jar:/home/pyegor/.m2/repository/org/apache/logging/log4j/log4j-api/2.21.1/log4j-api-2.21.1.jar:/home/pyegor/.m2/repository/org/slf4j/jul-to-slf4j/2.0.9/jul-to-slf4j-2.0.9.jar:/home/pyegor/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar:/home/pyegor/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.2.0/spring-boot-starter-json-3.2.0.jar:/home/pyegor/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.15.3/jackson-databind-2.15.3.jar:/home/pyegor/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.15.3/jackson-annotations-2.15.3.jar:/home/pyegor/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.3/jackson-core-2.15.3.jar:/home/pyegor/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.15.3/jackson-datatype-jdk8-2.15.3.jar:/home/pyegor/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.15.3/jackson-datatype-jsr310-2.15.3.jar:/home/pyegor/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.15.3/jackson-module-parameter-names-2.15.3.jar:/home/pyegor/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.2.0/spring-boot-starter-tomcat-3.2.0.jar:/home/pyegor/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.16/tomcat-embed-core-10.1.16.jar:/home/pyegor/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.16/tomcat-embed-websocket-10.1.16.jar:/home/pyegor/.m2/repository/org/springframework/spring-web/6.1.1/spring-web-6.1.1.jar:/home/pyegor/.m2/repository/io/micrometer/micrometer-observation/1.12.0/micrometer-observation-1.12.0.jar:/home/pyegor/.m2/repository/io/micrometer/micrometer-commons/1.12.0/micrometer-commons-1.12.0.jar:/home/pyegor/.m2/repository/org/springframework/spring-webmvc/6.1.1/spring-webmvc-6.1.1.jar:/home/pyegor/.m2/repository/org/springframework/spring-expression/6.1.1/spring-expression-6.1.1.jar:/home/pyegor/.m2/repository/org/postgresql/postgresql/42.6.0/postgresql-42.6.0.jar:/home/pyegor/.m2/repository/org/checkerframework/checker-qual/3.31.0/checker-qual-3.31.0.jar:/home/pyegor/.m2/repository/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar:/home/pyegor/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.2.0/spring-boot-starter-test-3.2.0.jar:/home/pyegor/.m2/repository/org/springframework/boot/spring-boot-test/3.2.0/spring-boot-test-3.2.0.jar:/home/pyegor/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.2.0/spring-boot-test-autoconfigure-3.2.0.jar:/home/pyegor/.m2/repository/com/jayway/jsonpath/json-path/2.8.0/json-path-2.8.0.jar:/home/pyegor/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.1/jakarta.xml.bind-api-4.0.1.jar:/home/pyegor/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.2/jakarta.activation-api-2.1.2.jar:/home/pyegor/.m2/repository/net/minidev/json-smart/2.5.0/json-smart-2.5.0.jar:/home/pyegor/.m2/repository/net/minidev/accessors-smart/2.5.0/accessors-smart-2.5.0.jar:/home/pyegor/.m2/repository/org/ow2/asm/asm/9.3/asm-9.3.jar:/home/pyegor/.m2/repository/org/assertj/assertj-core/3.24.2/assertj-core-3.24.2.jar:/home/pyegor/.m2/repository/org/awaitility/awaitility/4.2.0/awaitility-4.2.0.jar:/home/pyegor/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/home/pyegor/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.1/junit-jupiter-5.10.1.jar:/home/pyegor/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.1/junit-jupiter-api-5.10.1.jar:/home/pyegor/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/pyegor/.m2/repository/org/junit/platform/junit-platform-commons/1.10.1/junit-platform-commons-1.10.1.jar:/home/pyegor/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/pyegor/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.1/junit-jupiter-params-5.10.1.jar:/home/pyegor/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.1/junit-jupiter-engine-5.10.1.jar:/home/pyegor/.m2/repository/org/junit/platform/junit-platform-engine/1.10.1/junit-platform-engine-1.10.1.jar:/home/pyegor/.m2/repository/org/mockito/mockito-core/5.7.0/mockito-core-5.7.0.jar:/home/pyegor/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.10/byte-buddy-agent-1.14.10.jar:/home/pyegor/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/home/pyegor/.m2/repository/org/mockito/mockito-junit-jupiter/5.7.0/mockito-junit-jupiter-5.7.0.jar:/home/pyegor/.m2/repository/org/skyscreamer/jsonassert/1.5.1/jsonassert-1.5.1.jar:/home/pyegor/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/home/pyegor/.m2/repository/org/springframework/spring-core/6.1.1/spring-core-6.1.1.jar:/home/pyegor/.m2/repository/org/springframework/spring-jcl/6.1.1/spring-jcl-6.1.1.jar:/home/pyegor/.m2/repository/org/springframework/spring-test/6.1.1/spring-test-6.1.1.jar:/home/pyegor/.m2/repository/org/xmlunit/xmlunit-core/2.9.1/xmlunit-core-2.9.1.jar:/home/pyegor/.m2/repository/com/h2database/h2/2.2.224/h2-2.2.224.jar:/home/pyegor/.m2/repository/org/testcontainers/postgresql/1.19.3/postgresql-1.19.3.jar:/home/pyegor/.m2/repository/org/testcontainers/jdbc/1.19.3/jdbc-1.19.3.jar:/home/pyegor/.m2/repository/org/testcontainers/database-commons/1.19.3/database-commons-1.19.3.jar:/home/pyegor/.m2/repository/org/testcontainers/junit-jupiter/1.19.3/junit-jupiter-1.19.3.jar:/home/pyegor/.m2/repository/org/testcontainers/testcontainers/1.19.3/testcontainers-1.19.3.jar:/home/pyegor/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/home/pyegor/.m2/repository/org/hamcrest/hamcrest-core/2.2/hamcrest-core-2.2.jar:/home/pyegor/.m2/repository/org/apache/commons/commons-compress/1.24.0/commons-compress-1.24.0.jar:/home/pyegor/.m2/repository/org/rnorth/duct-tape/duct-tape/1.0.8/duct-tape-1.0.8.jar:/home/pyegor/.m2/repository/org/jetbrains/annotations/17.0.0/annotations-17.0.0.jar:/home/pyegor/.m2/repository/com/github/docker-java/docker-java-api/3.3.4/docker-java-api-3.3.4.jar:/home/pyegor/.m2/repository/com/github/docker-java/docker-java-transport-zerodep/3.3.4/docker-java-transport-zerodep-3.3.4.jar:/home/pyegor/.m2/repository/com/github/docker-java/docker-java-transport/3.3.4/docker-java-transport-3.3.4.jar:/home/pyegor/.m2/repository/net/java/dev/jna/jna/5.13.0/jna-5.13.0.jar:/home/pyegor/.m2/repository/org/springframework/boot/spring-boot-starter-validation/3.2.0/spring-boot-starter-validation-3.2.0.jar:/home/pyegor/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.16/tomcat-embed-el-10.1.16.jar:/home/pyegor/.m2/repository/org/hibernate/validator/hibernate-validator/8.0.1.Final/hibernate-validator-8.0.1.Final.jar:/home/pyegor/.m2/repository/jakarta/validation/jakarta.validation-api/3.0.2/jakarta.validation-api-3.0.2.jar:/home/pyegor/.m2/repository/org/springframework/boot/spring-boot-devtools/3.2.0/spring-boot-devtools-3.2.0.jar:/home/pyegor/.m2/repository/org/springframework/boot/spring-boot/3.2.0/spring-boot-3.2.0.jar:/home/pyegor/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.2.0/spring-boot-autoconfigure-3.2.0.jar:"/>
+    <property name="java.vm.vendor" value="Arch Linux"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://openjdk.org/"/>
+    <property name="user.timezone" value="Asia/Yekaterinburg"/>
+    <property name="org.jboss.logging.provider" value="slf4j"/>
+    <property name="os.name" value="Linux"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-21-openjdk/lib"/>
+    <property name="sun.java.command" value="/home/pyegor/study/learning-platform/target/surefire/surefirebooter-20251229185349687_3.jar /home/pyegor/study/learning-platform/target/surefire 2025-12-29T18-53-49_266-jvmRun1 surefire-20251229185349687_1tmp surefire_0-20251229185349687_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/home/pyegor/study/learning-platform/target/test-classes:/home/pyegor/study/learning-platform/target/classes:/home/pyegor/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/3.2.0/spring-boot-starter-data-jpa-3.2.0.jar:/home/pyegor/.m2/repository/org/springframework/boot/spring-boot-starter-aop/3.2.0/spring-boot-starter-aop-3.2.0.jar:/home/pyegor/.m2/repository/org/springframework/spring-aop/6.1.1/spring-aop-6.1.1.jar:/home/pyegor/.m2/repository/org/aspectj/aspectjweaver/1.9.20.1/aspectjweaver-1.9.20.1.jar:/home/pyegor/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/3.2.0/spring-boot-starter-jdbc-3.2.0.jar:/home/pyegor/.m2/repository/com/zaxxer/HikariCP/5.0.1/HikariCP-5.0.1.jar:/home/pyegor/.m2/repository/org/springframework/spring-jdbc/6.1.1/spring-jdbc-6.1.1.jar:/home/pyegor/.m2/repository/org/hibernate/orm/hibernate-core/6.3.1.Final/hibernate-core-6.3.1.Final.jar:/home/pyegor/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar:/home/pyegor/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/home/pyegor/.m2/repository/org/jboss/logging/jboss-logging/3.5.3.Final/jboss-logging-3.5.3.Final.jar:/home/pyegor/.m2/repository/org/hibernate/common/hibernate-commons-annotations/6.0.6.Final/hibernate-commons-annotations-6.0.6.Final.jar:/home/pyegor/.m2/repository/io/smallrye/jandex/3.1.2/jandex-3.1.2.jar:/home/pyegor/.m2/repository/com/fasterxml/classmate/1.6.0/classmate-1.6.0.jar:/home/pyegor/.m2/repository/net/bytebuddy/byte-buddy/1.14.10/byte-buddy-1.14.10.jar:/home/pyegor/.m2/repository/org/glassfish/jaxb/jaxb-runtime/4.0.4/jaxb-runtime-4.0.4.jar:/home/pyegor/.m2/repository/org/glassfish/jaxb/jaxb-core/4.0.4/jaxb-core-4.0.4.jar:/home/pyegor/.m2/repository/org/eclipse/angus/angus-activation/2.0.1/angus-activation-2.0.1.jar:/home/pyegor/.m2/repository/org/glassfish/jaxb/txw2/4.0.4/txw2-4.0.4.jar:/home/pyegor/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.2/istack-commons-runtime-4.1.2.jar:/home/pyegor/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar:/home/pyegor/.m2/repository/org/antlr/antlr4-runtime/4.10.1/antlr4-runtime-4.10.1.jar:/home/pyegor/.m2/repository/org/springframework/data/spring-data-jpa/3.2.0/spring-data-jpa-3.2.0.jar:/home/pyegor/.m2/repository/org/springframework/data/spring-data-commons/3.2.0/spring-data-commons-3.2.0.jar:/home/pyegor/.m2/repository/org/springframework/spring-orm/6.1.1/spring-orm-6.1.1.jar:/home/pyegor/.m2/repository/org/springframework/spring-context/6.1.1/spring-context-6.1.1.jar:/home/pyegor/.m2/repository/org/springframework/spring-tx/6.1.1/spring-tx-6.1.1.jar:/home/pyegor/.m2/repository/org/springframework/spring-beans/6.1.1/spring-beans-6.1.1.jar:/home/pyegor/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/home/pyegor/.m2/repository/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar:/home/pyegor/.m2/repository/org/springframework/spring-aspects/6.1.1/spring-aspects-6.1.1.jar:/home/pyegor/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.2.0/spring-boot-starter-web-3.2.0.jar:/home/pyegor/.m2/repository/org/springframework/boot/spring-boot-starter/3.2.0/spring-boot-starter-3.2.0.jar:/home/pyegor/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.2.0/spring-boot-starter-logging-3.2.0.jar:/home/pyegor/.m2/repository/ch/qos/logback/logback-classic/1.4.11/logback-classic-1.4.11.jar:/home/pyegor/.m2/repository/ch/qos/logback/logback-core/1.4.11/logback-core-1.4.11.jar:/home/pyegor/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.21.1/log4j-to-slf4j-2.21.1.jar:/home/pyegor/.m2/repository/org/apache/logging/log4j/log4j-api/2.21.1/log4j-api-2.21.1.jar:/home/pyegor/.m2/repository/org/slf4j/jul-to-slf4j/2.0.9/jul-to-slf4j-2.0.9.jar:/home/pyegor/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar:/home/pyegor/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.2.0/spring-boot-starter-json-3.2.0.jar:/home/pyegor/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.15.3/jackson-databind-2.15.3.jar:/home/pyegor/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.15.3/jackson-annotations-2.15.3.jar:/home/pyegor/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.3/jackson-core-2.15.3.jar:/home/pyegor/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.15.3/jackson-datatype-jdk8-2.15.3.jar:/home/pyegor/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.15.3/jackson-datatype-jsr310-2.15.3.jar:/home/pyegor/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.15.3/jackson-module-parameter-names-2.15.3.jar:/home/pyegor/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.2.0/spring-boot-starter-tomcat-3.2.0.jar:/home/pyegor/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.16/tomcat-embed-core-10.1.16.jar:/home/pyegor/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.16/tomcat-embed-websocket-10.1.16.jar:/home/pyegor/.m2/repository/org/springframework/spring-web/6.1.1/spring-web-6.1.1.jar:/home/pyegor/.m2/repository/io/micrometer/micrometer-observation/1.12.0/micrometer-observation-1.12.0.jar:/home/pyegor/.m2/repository/io/micrometer/micrometer-commons/1.12.0/micrometer-commons-1.12.0.jar:/home/pyegor/.m2/repository/org/springframework/spring-webmvc/6.1.1/spring-webmvc-6.1.1.jar:/home/pyegor/.m2/repository/org/springframework/spring-expression/6.1.1/spring-expression-6.1.1.jar:/home/pyegor/.m2/repository/org/postgresql/postgresql/42.6.0/postgresql-42.6.0.jar:/home/pyegor/.m2/repository/org/checkerframework/checker-qual/3.31.0/checker-qual-3.31.0.jar:/home/pyegor/.m2/repository/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar:/home/pyegor/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.2.0/spring-boot-starter-test-3.2.0.jar:/home/pyegor/.m2/repository/org/springframework/boot/spring-boot-test/3.2.0/spring-boot-test-3.2.0.jar:/home/pyegor/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.2.0/spring-boot-test-autoconfigure-3.2.0.jar:/home/pyegor/.m2/repository/com/jayway/jsonpath/json-path/2.8.0/json-path-2.8.0.jar:/home/pyegor/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.1/jakarta.xml.bind-api-4.0.1.jar:/home/pyegor/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.2/jakarta.activation-api-2.1.2.jar:/home/pyegor/.m2/repository/net/minidev/json-smart/2.5.0/json-smart-2.5.0.jar:/home/pyegor/.m2/repository/net/minidev/accessors-smart/2.5.0/accessors-smart-2.5.0.jar:/home/pyegor/.m2/repository/org/ow2/asm/asm/9.3/asm-9.3.jar:/home/pyegor/.m2/repository/org/assertj/assertj-core/3.24.2/assertj-core-3.24.2.jar:/home/pyegor/.m2/repository/org/awaitility/awaitility/4.2.0/awaitility-4.2.0.jar:/home/pyegor/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/home/pyegor/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.1/junit-jupiter-5.10.1.jar:/home/pyegor/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.1/junit-jupiter-api-5.10.1.jar:/home/pyegor/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/pyegor/.m2/repository/org/junit/platform/junit-platform-commons/1.10.1/junit-platform-commons-1.10.1.jar:/home/pyegor/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/pyegor/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.1/junit-jupiter-params-5.10.1.jar:/home/pyegor/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.1/junit-jupiter-engine-5.10.1.jar:/home/pyegor/.m2/repository/org/junit/platform/junit-platform-engine/1.10.1/junit-platform-engine-1.10.1.jar:/home/pyegor/.m2/repository/org/mockito/mockito-core/5.7.0/mockito-core-5.7.0.jar:/home/pyegor/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.10/byte-buddy-agent-1.14.10.jar:/home/pyegor/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/home/pyegor/.m2/repository/org/mockito/mockito-junit-jupiter/5.7.0/mockito-junit-jupiter-5.7.0.jar:/home/pyegor/.m2/repository/org/skyscreamer/jsonassert/1.5.1/jsonassert-1.5.1.jar:/home/pyegor/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/home/pyegor/.m2/repository/org/springframework/spring-core/6.1.1/spring-core-6.1.1.jar:/home/pyegor/.m2/repository/org/springframework/spring-jcl/6.1.1/spring-jcl-6.1.1.jar:/home/pyegor/.m2/repository/org/springframework/spring-test/6.1.1/spring-test-6.1.1.jar:/home/pyegor/.m2/repository/org/xmlunit/xmlunit-core/2.9.1/xmlunit-core-2.9.1.jar:/home/pyegor/.m2/repository/com/h2database/h2/2.2.224/h2-2.2.224.jar:/home/pyegor/.m2/repository/org/testcontainers/postgresql/1.19.3/postgresql-1.19.3.jar:/home/pyegor/.m2/repository/org/testcontainers/jdbc/1.19.3/jdbc-1.19.3.jar:/home/pyegor/.m2/repository/org/testcontainers/database-commons/1.19.3/database-commons-1.19.3.jar:/home/pyegor/.m2/repository/org/testcontainers/junit-jupiter/1.19.3/junit-jupiter-1.19.3.jar:/home/pyegor/.m2/repository/org/testcontainers/testcontainers/1.19.3/testcontainers-1.19.3.jar:/home/pyegor/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/home/pyegor/.m2/repository/org/hamcrest/hamcrest-core/2.2/hamcrest-core-2.2.jar:/home/pyegor/.m2/repository/org/apache/commons/commons-compress/1.24.0/commons-compress-1.24.0.jar:/home/pyegor/.m2/repository/org/rnorth/duct-tape/duct-tape/1.0.8/duct-tape-1.0.8.jar:/home/pyegor/.m2/repository/org/jetbrains/annotations/17.0.0/annotations-17.0.0.jar:/home/pyegor/.m2/repository/com/github/docker-java/docker-java-api/3.3.4/docker-java-api-3.3.4.jar:/home/pyegor/.m2/repository/com/github/docker-java/docker-java-transport-zerodep/3.3.4/docker-java-transport-zerodep-3.3.4.jar:/home/pyegor/.m2/repository/com/github/docker-java/docker-java-transport/3.3.4/docker-java-transport-3.3.4.jar:/home/pyegor/.m2/repository/net/java/dev/jna/jna/5.13.0/jna-5.13.0.jar:/home/pyegor/.m2/repository/org/springframework/boot/spring-boot-starter-validation/3.2.0/spring-boot-starter-validation-3.2.0.jar:/home/pyegor/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.16/tomcat-embed-el-10.1.16.jar:/home/pyegor/.m2/repository/org/hibernate/validator/hibernate-validator/8.0.1.Final/hibernate-validator-8.0.1.Final.jar:/home/pyegor/.m2/repository/jakarta/validation/jakarta.validation-api/3.0.2/jakarta.validation-api-3.0.2.jar:/home/pyegor/.m2/repository/org/springframework/boot/spring-boot-devtools/3.2.0/spring-boot-devtools-3.2.0.jar:/home/pyegor/.m2/repository/org/springframework/boot/spring-boot/3.2.0/spring-boot-3.2.0.jar:/home/pyegor/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.2.0/spring-boot-autoconfigure-3.2.0.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/pyegor"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-10-21"/>
+    <property name="java.home" value="/usr/lib/jvm/java-21-openjdk"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/home/pyegor/study/learning-platform"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="FILE_LOG_CHARSET" value="UTF-8"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="surefire.real.class.path" value="/home/pyegor/study/learning-platform/target/surefire/surefirebooter-20251229185349687_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.9+10"/>
+    <property name="user.name" value="pyegor"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="6.17.9-arch1-1"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/home/pyegor/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="com.zaxxer.hikari.pool_number" value="1"/>
+    <property name="java.version" value="21.0.9"/>
+    <property name="user.dir" value="/home/pyegor/study/learning-platform"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="67245"/>
+    <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Arch Linux"/>
+    <property name="java.vm.version" value="21.0.9+10"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+    <property name="LOGGED_APPLICATION_NAME" value="[learning-platform] "/>
+  </properties>
+  <testcase name="contextLoads" classname="com.learning.platform.ContextLoadTest" time="0.012">
+    <system-out><![CDATA[2025-12-29T18:54:17.636+05:00  INFO 67245 --- [learning-platform] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.learning.platform.ContextLoadTest]: ContextLoadTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-12-29T18:54:17.689+05:00  INFO 67245 --- [learning-platform] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.learning.platform.LearningPlatformApplication for test class com.learning.platform.ContextLoadTest
+2025-12-29T18:54:17.725+05:00  INFO 67245 --- [learning-platform] [           main] o.s.b.d.r.RestartApplicationListener     : Restart disabled due to context in which it is running
+2025-12-29T18:54:17.796+05:00  INFO 67245 --- [learning-platform] [           main] com.learning.platform.ContextLoadTest    : Starting ContextLoadTest using Java 21.0.9 with PID 67245 (started by pyegor in /home/pyegor/study/learning-platform)
+2025-12-29T18:54:17.797+05:00  INFO 67245 --- [learning-platform] [           main] com.learning.platform.ContextLoadTest    : The following 1 profile is active: "test"
+2025-12-29T18:54:18.169+05:00  INFO 67245 --- [learning-platform] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-29T18:54:18.198+05:00  INFO 67245 --- [learning-platform] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 17 JPA repository interfaces.
+2025-12-29T18:54:18.785+05:00  INFO 67245 --- [learning-platform] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-29T18:54:18.788+05:00  INFO 67245 --- [learning-platform] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-12-29T18:54:18.793+05:00  INFO 67245 --- [learning-platform] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-29T18:54:18.795+05:00  INFO 67245 --- [learning-platform] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-29T18:54:18.833+05:00  INFO 67245 --- [learning-platform] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn21: url=jdbc:h2:mem:testdb user=SA
+2025-12-29T18:54:18.835+05:00  INFO 67245 --- [learning-platform] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-29T18:54:18.841+05:00  WARN 67245 --- [learning-platform] [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-29T18:54:18.980+05:00  INFO 67245 --- [learning-platform] [           main] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: com.learning.platform.model.Enrollment (class must be instantiated by Interceptor)
+2025-12-29T18:54:19.018+05:00  INFO 67245 --- [learning-platform] [           main] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: com.learning.platform.model.Course (class must be instantiated by Interceptor)
+2025-12-29T18:54:19.029+05:00  INFO 67245 --- [learning-platform] [           main] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: com.learning.platform.model.Category (class must be instantiated by Interceptor)
+2025-12-29T18:54:19.040+05:00  INFO 67245 --- [learning-platform] [           main] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: com.learning.platform.model.Lesson (class must be instantiated by Interceptor)
+2025-12-29T18:54:19.050+05:00  INFO 67245 --- [learning-platform] [           main] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: com.learning.platform.model.Question (class must be instantiated by Interceptor)
+2025-12-29T18:54:19.085+05:00  INFO 67245 --- [learning-platform] [           main] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: com.learning.platform.model.Assignment (class must be instantiated by Interceptor)
+2025-12-29T18:54:19.094+05:00  INFO 67245 --- [learning-platform] [           main] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: com.learning.platform.model.Module (class must be instantiated by Interceptor)
+2025-12-29T18:54:19.149+05:00  INFO 67245 --- [learning-platform] [           main] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: com.learning.platform.model.AnswerOption (class must be instantiated by Interceptor)
+2025-12-29T18:54:19.237+05:00  INFO 67245 --- [learning-platform] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-29T18:54:19.238+05:00 DEBUG 67245 --- [learning-platform] [           main] org.hibernate.SQL                        : 
+    drop table if exists answer_options cascade 
+Hibernate: 
+    drop table if exists answer_options cascade 
+2025-12-29T18:54:19.242+05:00 DEBUG 67245 --- [learning-platform] [           main] org.hibernate.SQL                        : 
+    drop table if exists assignments cascade 
+Hibernate: 
+    drop table if exists assignments cascade 
+2025-12-29T18:54:19.243+05:00 DEBUG 67245 --- [learning-platform] [           main] org.hibernate.SQL                        : 
+    drop table if exists categories cascade 
+Hibernate: 
+    drop table if exists categories cascade 
+2025-12-29T18:54:19.244+05:00 DEBUG 67245 --- [learning-platform] [           main] org.hibernate.SQL                        : 
+    drop table if exists comments cascade 
+Hibernate: 
+    drop table if exists comments cascade 
+2025-12-29T18:54:19.244+05:00 DEBUG 67245 --- [learning-platform] [           main] org.hibernate.SQL                        : 
+    drop table if exists course_reviews cascade 
+Hibernate: 
+    drop table if exists course_reviews cascade 
+2025-12-29T18:54:19.245+05:00 DEBUG 67245 --- [learning-platform] [           main] org.hibernate.SQL                        : 
+    drop table if exists course_tags cascade 
+Hibernate: 
+    drop table if exists course_tags cascade 
+2025-12-29T18:54:19.245+05:00 DEBUG 67245 --- [learning-platform] [           main] org.hibernate.SQL                        : 
+    drop table if exists courses cascade 
+Hibernate: 
+    drop table if exists courses cascade 
+2025-12-29T18:54:19.245+05:00 DEBUG 67245 --- [learning-platform] [           main] org.hibernate.SQL                        : 
+    drop table if exists enrollments cascade 
+Hibernate: 
+    drop table if exists enrollments cascade 
+2025-12-29T18:54:19.245+05:00 DEBUG 67245 --- [learning-platform] [           main] org.hibernate.SQL                        : 
+    drop table if exists lessons cascade 
+Hibernate: 
+    drop table if exists lessons cascade 
+2025-12-29T18:54:19.246+05:00 DEBUG 67245 --- [learning-platform] [           main] org.hibernate.SQL                        : 
+    drop table if exists modules cascade 
+Hibernate: 
+    drop table if exists modules cascade 
+2025-12-29T18:54:19.246+05:00 DEBUG 67245 --- [learning-platform] [           main] org.hibernate.SQL                        : 
+    drop table if exists notifications cascade 
+Hibernate: 
+    drop table if exists notifications cascade 
+2025-12-29T18:54:19.246+05:00 DEBUG 67245 --- [learning-platform] [           main] org.hibernate.SQL                        : 
+    drop table if exists profiles cascade 
+Hibernate: 
+    drop table if exists profiles cascade 
+2025-12-29T18:54:19.246+05:00 DEBUG 67245 --- [learning-platform] [           main] org.hibernate.SQL                        : 
+    drop table if exists questions cascade 
+Hibernate: 
+    drop table if exists questions cascade 
+2025-12-29T18:54:19.247+05:00 DEBUG 67245 --- [learning-platform] [           main] org.hibernate.SQL                        : 
+    drop table if exists quiz_submissions cascade 
+Hibernate: 
+    drop table if exists quiz_submissions cascade 
+2025-12-29T18:54:19.247+05:00 DEBUG 67245 --- [learning-platform] [           main] org.hibernate.SQL                        : 
+    drop table if exists quizzes cascade 
+Hibernate: 
+    drop table if exists quizzes cascade 
+2025-12-29T18:54:19.247+05:00 DEBUG 67245 --- [learning-platform] [           main] org.hibernate.SQL                        : 
+    drop table if exists submissions cascade 
+Hibernate: 
+    drop table if exists submissions cascade 
+2025-12-29T18:54:19.248+05:00 DEBUG 67245 --- [learning-platform] [           main] org.hibernate.SQL                        : 
+    drop table if exists tags cascade 
+Hibernate: 
+    drop table if exists tags cascade 
+2025-12-29T18:54:19.248+05:00 DEBUG 67245 --- [learning-platform] [           main] org.hibernate.SQL                        : 
+    drop table if exists users cascade 
+Hibernate: 
+    drop table if exists users cascade 
+2025-12-29T18:54:19.249+05:00 DEBUG 67245 --- [learning-platform] [           main] org.hibernate.SQL                        : 
+    create table answer_options (
+        is_correct boolean,
+        id bigint generated by default as identity,
+        question_id bigint not null,
+        text TEXT not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table answer_options (
+        is_correct boolean,
+        id bigint generated by default as identity,
+        question_id bigint not null,
+        text TEXT not null,
+        primary key (id)
+    )
+2025-12-29T18:54:19.251+05:00 DEBUG 67245 --- [learning-platform] [           main] org.hibernate.SQL                        : 
+    create table assignments (
+        max_score integer,
+        due_date timestamp(6),
+        id bigint generated by default as identity,
+        lesson_id bigint not null,
+        description TEXT,
+        title varchar(255) not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table assignments (
+        max_score integer,
+        due_date timestamp(6),
+        id bigint generated by default as identity,
+        lesson_id bigint not null,
+        description TEXT,
+        title varchar(255) not null,
+        primary key (id)
+    )
+2025-12-29T18:54:19.253+05:00 DEBUG 67245 --- [learning-platform] [           main] org.hibernate.SQL                        : 
+    create table categories (
+        id bigint generated by default as identity,
+        description varchar(255),
+        name varchar(255) not null unique,
+        primary key (id)
+    )
+Hibernate: 
+    create table categories (
+        id bigint generated by default as identity,
+        description varchar(255),
+        name varchar(255) not null unique,
+        primary key (id)
+    )
+2025-12-29T18:54:19.255+05:00 DEBUG 67245 --- [learning-platform] [           main] org.hibernate.SQL                        : 
+    create table comments (
+        author_id bigint not null,
+        created_at timestamp(6) not null,
+        id bigint generated by default as identity,
+        parent_comment_id bigint,
+        updated_at timestamp(6),
+        content TEXT not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table comments (
+        author_id bigint not null,
+        created_at timestamp(6) not null,
+        id bigint generated by default as identity,
+        parent_comment_id bigint,
+        updated_at timestamp(6),
+        content TEXT not null,
+        primary key (id)
+    )
+2025-12-29T18:54:19.256+05:00 DEBUG 67245 --- [learning-platform] [           main] org.hibernate.SQL                        : 
+    create table course_reviews (
+        rating integer,
+        course_id bigint not null,
+        created_at timestamp(6),
+        id bigint generated by default as identity,
+        student_id bigint not null,
+        comment TEXT,
+        primary key (id)
+    )
+Hibernate: 
+    create table course_reviews (
+        rating integer,
+        course_id bigint not null,
+        created_at timestamp(6),
+        id bigint generated by default as identity,
+        student_id bigint not null,
+        comment TEXT,
+        primary key (id)
+    )
+2025-12-29T18:54:19.261+05:00 DEBUG 67245 --- [learning-platform] [           main] org.hibernate.SQL                        : 
+    create table course_tags (
+        course_id bigint not null,
+        tag_id bigint not null
+    )
+Hibernate: 
+    create table course_tags (
+        course_id bigint not null,
+        tag_id bigint not null
+    )
+2025-12-29T18:54:19.265+05:00 DEBUG 67245 --- [learning-platform] [           main] org.hibernate.SQL                        : 
+    create table courses (
+        duration integer,
+        is_published boolean,
+        price float(53),
+        start_date date,
+        category_id bigint,
+        created_at timestamp(6),
+        id bigint generated by default as identity,
+        instructor_id bigint,
+        updated_at timestamp(6),
+        description TEXT,
+        image_url varchar(255),
+        level varchar(255) check (level in ('BEGINNER','INTERMEDIATE','ADVANCED')),
+        title varchar(255) not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table courses (
+        duration integer,
+        is_published boolean,
+        price float(53),
+        start_date date,
+        category_id bigint,
+        created_at timestamp(6),
+        id bigint generated by default as identity,
+        instructor_id bigint,
+        updated_at timestamp(6),
+        description TEXT,
+        image_url varchar(255),
+        level varchar(255) check (level in ('BEGINNER','INTERMEDIATE','ADVANCED')),
+        title varchar(255) not null,
+        primary key (id)
+    )
+2025-12-29T18:54:19.268+05:00 DEBUG 67245 --- [learning-platform] [           main] org.hibernate.SQL                        : 
+    create table enrollments (
+        course_id bigint not null,
+        enroll_date timestamp(6),
+        id bigint generated by default as identity,
+        user_id bigint not null,
+        status varchar(255) check (status in ('ACTIVE','COMPLETED','DROPPED')),
+        primary key (id),
+        unique (user_id, course_id)
+    )
+Hibernate: 
+    create table enrollments (
+        course_id bigint not null,
+        enroll_date timestamp(6),
+        id bigint generated by default as identity,
+        user_id bigint not null,
+        status varchar(255) check (status in ('ACTIVE','COMPLETED','DROPPED')),
+        primary key (id),
+        unique (user_id, course_id)
+    )
+2025-12-29T18:54:19.270+05:00 DEBUG 67245 --- [learning-platform] [           main] org.hibernate.SQL                        : 
+    create table lessons (
+        duration_minutes integer,
+        id bigint generated by default as identity,
+        module_id bigint not null,
+        content TEXT,
+        title varchar(255) not null,
+        video_url varchar(255),
+        primary key (id)
+    )
+Hibernate: 
+    create table lessons (
+        duration_minutes integer,
+        id bigint generated by default as identity,
+        module_id bigint not null,
+        content TEXT,
+        title varchar(255) not null,
+        video_url varchar(255),
+        primary key (id)
+    )
+2025-12-29T18:54:19.273+05:00 DEBUG 67245 --- [learning-platform] [           main] org.hibernate.SQL                        : 
+    create table modules (
+        order_index integer,
+        course_id bigint not null,
+        id bigint generated by default as identity,
+        description TEXT,
+        title varchar(255) not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table modules (
+        order_index integer,
+        course_id bigint not null,
+        id bigint generated by default as identity,
+        description TEXT,
+        title varchar(255) not null,
+        primary key (id)
+    )
+2025-12-29T18:54:19.275+05:00 DEBUG 67245 --- [learning-platform] [           main] org.hibernate.SQL                        : 
+    create table notifications (
+        is_read boolean not null,
+        created_at timestamp(6) not null,
+        id bigint generated by default as identity,
+        read_at timestamp(6),
+        user_id bigint not null,
+        message TEXT not null,
+        title varchar(255) not null,
+        type varchar(255) not null check (type in ('ASSIGNMENT_DUE','GRADE_POSTED','NEW_COURSE','ENROLLMENT_CONFIRMED','QUIZ_AVAILABLE','COURSE_UPDATE','MESSAGE')),
+        primary key (id)
+    )
+Hibernate: 
+    create table notifications (
+        is_read boolean not null,
+        created_at timestamp(6) not null,
+        id bigint generated by default as identity,
+        read_at timestamp(6),
+        user_id bigint not null,
+        message TEXT not null,
+        title varchar(255) not null,
+        type varchar(255) not null check (type in ('ASSIGNMENT_DUE','GRADE_POSTED','NEW_COURSE','ENROLLMENT_CONFIRMED','QUIZ_AVAILABLE','COURSE_UPDATE','MESSAGE')),
+        primary key (id)
+    )
+2025-12-29T18:54:19.295+05:00 DEBUG 67245 --- [learning-platform] [           main] org.hibernate.SQL                        : 
+    create table profiles (
+        id bigint generated by default as identity,
+        user_id bigint not null unique,
+        address varchar(255),
+        avatar_url varchar(255),
+        bio TEXT,
+        website varchar(255),
+        primary key (id)
+    )
+Hibernate: 
+    create table profiles (
+        id bigint generated by default as identity,
+        user_id bigint not null unique,
+        address varchar(255),
+        avatar_url varchar(255),
+        bio TEXT,
+        website varchar(255),
+        primary key (id)
+    )
+2025-12-29T18:54:19.297+05:00 DEBUG 67245 --- [learning-platform] [           main] org.hibernate.SQL                        : 
+    create table questions (
+        points integer,
+        id bigint generated by default as identity,
+        quiz_id bigint not null,
+        text TEXT not null,
+        type varchar(255) check (type in ('SINGLE_CHOICE','MULTIPLE_CHOICE')),
+        primary key (id)
+    )
+Hibernate: 
+    create table questions (
+        points integer,
+        id bigint generated by default as identity,
+        quiz_id bigint not null,
+        text TEXT not null,
+        type varchar(255) check (type in ('SINGLE_CHOICE','MULTIPLE_CHOICE')),
+        primary key (id)
+    )
+2025-12-29T18:54:19.298+05:00 DEBUG 67245 --- [learning-platform] [           main] org.hibernate.SQL                        : 
+    create table quiz_submissions (
+        max_score integer,
+        percentage float(53),
+        score integer,
+        id bigint generated by default as identity,
+        quiz_id bigint not null,
+        student_id bigint not null,
+        taken_at timestamp(6),
+        status varchar(255) check (status in ('PENDING','PASSED','FAILED')),
+        primary key (id)
+    )
+Hibernate: 
+    create table quiz_submissions (
+        max_score integer,
+        percentage float(53),
+        score integer,
+        id bigint generated by default as identity,
+        quiz_id bigint not null,
+        student_id bigint not null,
+        taken_at timestamp(6),
+        status varchar(255) check (status in ('PENDING','PASSED','FAILED')),
+        primary key (id)
+    )
+2025-12-29T18:54:19.305+05:00 DEBUG 67245 --- [learning-platform] [           main] org.hibernate.SQL                        : 
+    create table quizzes (
+        passing_score integer,
+        time_limit_minutes integer,
+        id bigint generated by default as identity,
+        module_id bigint unique,
+        description TEXT,
+        title varchar(255) not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table quizzes (
+        passing_score integer,
+        time_limit_minutes integer,
+        id bigint generated by default as identity,
+        module_id bigint unique,
+        description TEXT,
+        title varchar(255) not null,
+        primary key (id)
+    )
+2025-12-29T18:54:19.307+05:00 DEBUG 67245 --- [learning-platform] [           main] org.hibernate.SQL                        : 
+    create table submissions (
+        score integer,
+        assignment_id bigint not null,
+        id bigint generated by default as identity,
+        student_id bigint not null,
+        submitted_at timestamp(6),
+        content TEXT,
+        feedback TEXT,
+        status varchar(255) check (status in ('EXPECTED','ACCEPTED','SCORED','REJECTED')),
+        primary key (id),
+        unique (assignment_id, student_id)
+    )
+Hibernate: 
+    create table submissions (
+        score integer,
+        assignment_id bigint not null,
+        id bigint generated by default as identity,
+        student_id bigint not null,
+        submitted_at timestamp(6),
+        content TEXT,
+        feedback TEXT,
+        status varchar(255) check (status in ('EXPECTED','ACCEPTED','SCORED','REJECTED')),
+        primary key (id),
+        unique (assignment_id, student_id)
+    )
+2025-12-29T18:54:19.310+05:00 DEBUG 67245 --- [learning-platform] [           main] org.hibernate.SQL                        : 
+    create table tags (
+        id bigint generated by default as identity,
+        description TEXT,
+        name varchar(255) not null unique,
+        primary key (id)
+    )
+Hibernate: 
+    create table tags (
+        id bigint generated by default as identity,
+        description TEXT,
+        name varchar(255) not null unique,
+        primary key (id)
+    )
+2025-12-29T18:54:19.313+05:00 DEBUG 67245 --- [learning-platform] [           main] org.hibernate.SQL                        : 
+    create table users (
+        created_at timestamp(6),
+        id bigint generated by default as identity,
+        email varchar(255) not null unique,
+        first_name varchar(255),
+        last_name varchar(255),
+        password varchar(255) not null,
+        role varchar(255) check (role in ('STUDENT','INSTRUCTOR','ADMIN')),
+        username varchar(255) not null unique,
+        primary key (id)
+    )
+Hibernate: 
+    create table users (
+        created_at timestamp(6),
+        id bigint generated by default as identity,
+        email varchar(255) not null unique,
+        first_name varchar(255),
+        last_name varchar(255),
+        password varchar(255) not null,
+        role varchar(255) check (role in ('STUDENT','INSTRUCTOR','ADMIN')),
+        username varchar(255) not null unique,
+        primary key (id)
+    )
+2025-12-29T18:54:19.316+05:00 DEBUG 67245 --- [learning-platform] [           main] org.hibernate.SQL                        : 
+    alter table if exists answer_options 
+       add constraint FKfapodm8kfiu9a9a4o2r43rcgp 
+       foreign key (question_id) 
+       references questions
+Hibernate: 
+    alter table if exists answer_options 
+       add constraint FKfapodm8kfiu9a9a4o2r43rcgp 
+       foreign key (question_id) 
+       references questions
+2025-12-29T18:54:19.319+05:00 DEBUG 67245 --- [learning-platform] [           main] org.hibernate.SQL                        : 
+    alter table if exists assignments 
+       add constraint FKj6l7dcv3gjrabhqjqsdolg78l 
+       foreign key (lesson_id) 
+       references lessons
+Hibernate: 
+    alter table if exists assignments 
+       add constraint FKj6l7dcv3gjrabhqjqsdolg78l 
+       foreign key (lesson_id) 
+       references lessons
+2025-12-29T18:54:19.323+05:00 DEBUG 67245 --- [learning-platform] [           main] org.hibernate.SQL                        : 
+    alter table if exists comments 
+       add constraint FKn2na60ukhs76ibtpt9burkm27 
+       foreign key (author_id) 
+       references users
+Hibernate: 
+    alter table if exists comments 
+       add constraint FKn2na60ukhs76ibtpt9burkm27 
+       foreign key (author_id) 
+       references users
+2025-12-29T18:54:19.325+05:00 DEBUG 67245 --- [learning-platform] [           main] org.hibernate.SQL                        : 
+    alter table if exists comments 
+       add constraint FK7h839m3lkvhbyv3bcdv7sm4fj 
+       foreign key (parent_comment_id) 
+       references comments
+Hibernate: 
+    alter table if exists comments 
+       add constraint FK7h839m3lkvhbyv3bcdv7sm4fj 
+       foreign key (parent_comment_id) 
+       references comments
+2025-12-29T18:54:19.327+05:00 DEBUG 67245 --- [learning-platform] [           main] org.hibernate.SQL                        : 
+    alter table if exists course_reviews 
+       add constraint FK799g8dfcye3g51ru63bfdhyb1 
+       foreign key (course_id) 
+       references courses
+Hibernate: 
+    alter table if exists course_reviews 
+       add constraint FK799g8dfcye3g51ru63bfdhyb1 
+       foreign key (course_id) 
+       references courses
+2025-12-29T18:54:19.329+05:00 DEBUG 67245 --- [learning-platform] [           main] org.hibernate.SQL                        : 
+    alter table if exists course_reviews 
+       add constraint FKhh2x4vh4c3w8q5htsg6i49dv1 
+       foreign key (student_id) 
+       references users
+Hibernate: 
+    alter table if exists course_reviews 
+       add constraint FKhh2x4vh4c3w8q5htsg6i49dv1 
+       foreign key (student_id) 
+       references users
+2025-12-29T18:54:19.332+05:00 DEBUG 67245 --- [learning-platform] [           main] org.hibernate.SQL                        : 
+    alter table if exists course_tags 
+       add constraint FKle4e0o8293pd96wrrfl77ij42 
+       foreign key (tag_id) 
+       references tags
+Hibernate: 
+    alter table if exists course_tags 
+       add constraint FKle4e0o8293pd96wrrfl77ij42 
+       foreign key (tag_id) 
+       references tags
+2025-12-29T18:54:19.334+05:00 DEBUG 67245 --- [learning-platform] [           main] org.hibernate.SQL                        : 
+    alter table if exists course_tags 
+       add constraint FKjqwlxw962j7q9wdogwnrctc2p 
+       foreign key (course_id) 
+       references courses
+Hibernate: 
+    alter table if exists course_tags 
+       add constraint FKjqwlxw962j7q9wdogwnrctc2p 
+       foreign key (course_id) 
+       references courses
+2025-12-29T18:54:19.336+05:00 DEBUG 67245 --- [learning-platform] [           main] org.hibernate.SQL                        : 
+    alter table if exists courses 
+       add constraint FK72l5dj585nq7i6xxv1vj51lyn 
+       foreign key (category_id) 
+       references categories
+Hibernate: 
+    alter table if exists courses 
+       add constraint FK72l5dj585nq7i6xxv1vj51lyn 
+       foreign key (category_id) 
+       references categories
+2025-12-29T18:54:19.339+05:00 DEBUG 67245 --- [learning-platform] [           main] org.hibernate.SQL                        : 
+    alter table if exists courses 
+       add constraint FKcyfum8goa6q5u13uog0563gyp 
+       foreign key (instructor_id) 
+       references users
+Hibernate: 
+    alter table if exists courses 
+       add constraint FKcyfum8goa6q5u13uog0563gyp 
+       foreign key (instructor_id) 
+       references users
+2025-12-29T18:54:19.341+05:00 DEBUG 67245 --- [learning-platform] [           main] org.hibernate.SQL                        : 
+    alter table if exists enrollments 
+       add constraint FKho8mcicp4196ebpltdn9wl6co 
+       foreign key (course_id) 
+       references courses
+Hibernate: 
+    alter table if exists enrollments 
+       add constraint FKho8mcicp4196ebpltdn9wl6co 
+       foreign key (course_id) 
+       references courses
+2025-12-29T18:54:19.343+05:00 DEBUG 67245 --- [learning-platform] [           main] org.hibernate.SQL                        : 
+    alter table if exists enrollments 
+       add constraint FK3hjx6rcnbmfw368sxigrpfpx0 
+       foreign key (user_id) 
+       references users
+Hibernate: 
+    alter table if exists enrollments 
+       add constraint FK3hjx6rcnbmfw368sxigrpfpx0 
+       foreign key (user_id) 
+       references users
+2025-12-29T18:54:19.346+05:00 DEBUG 67245 --- [learning-platform] [           main] org.hibernate.SQL                        : 
+    alter table if exists lessons 
+       add constraint FKt9yjhjbd9y3w6fxs66ny1wu02 
+       foreign key (module_id) 
+       references modules
+Hibernate: 
+    alter table if exists lessons 
+       add constraint FKt9yjhjbd9y3w6fxs66ny1wu02 
+       foreign key (module_id) 
+       references modules
+2025-12-29T18:54:19.348+05:00 DEBUG 67245 --- [learning-platform] [           main] org.hibernate.SQL                        : 
+    alter table if exists modules 
+       add constraint FK8qnnp812q1jd38fx7mxrhpw9 
+       foreign key (course_id) 
+       references courses
+Hibernate: 
+    alter table if exists modules 
+       add constraint FK8qnnp812q1jd38fx7mxrhpw9 
+       foreign key (course_id) 
+       references courses
+2025-12-29T18:54:19.350+05:00 DEBUG 67245 --- [learning-platform] [           main] org.hibernate.SQL                        : 
+    alter table if exists notifications 
+       add constraint FK9y21adhxn0ayjhfocscqox7bh 
+       foreign key (user_id) 
+       references users
+Hibernate: 
+    alter table if exists notifications 
+       add constraint FK9y21adhxn0ayjhfocscqox7bh 
+       foreign key (user_id) 
+       references users
+2025-12-29T18:54:19.357+05:00 DEBUG 67245 --- [learning-platform] [           main] org.hibernate.SQL                        : 
+    alter table if exists profiles 
+       add constraint FK410q61iev7klncmpqfuo85ivh 
+       foreign key (user_id) 
+       references users
+Hibernate: 
+    alter table if exists profiles 
+       add constraint FK410q61iev7klncmpqfuo85ivh 
+       foreign key (user_id) 
+       references users
+2025-12-29T18:54:19.362+05:00 DEBUG 67245 --- [learning-platform] [           main] org.hibernate.SQL                        : 
+    alter table if exists questions 
+       add constraint FKn3gvco4b0kewxc0bywf1igfms 
+       foreign key (quiz_id) 
+       references quizzes
+Hibernate: 
+    alter table if exists questions 
+       add constraint FKn3gvco4b0kewxc0bywf1igfms 
+       foreign key (quiz_id) 
+       references quizzes
+2025-12-29T18:54:19.364+05:00 DEBUG 67245 --- [learning-platform] [           main] org.hibernate.SQL                        : 
+    alter table if exists quiz_submissions 
+       add constraint FK7rmflyrtaibx04079o6tiu0me 
+       foreign key (quiz_id) 
+       references quizzes
+Hibernate: 
+    alter table if exists quiz_submissions 
+       add constraint FK7rmflyrtaibx04079o6tiu0me 
+       foreign key (quiz_id) 
+       references quizzes
+2025-12-29T18:54:19.367+05:00 DEBUG 67245 --- [learning-platform] [           main] org.hibernate.SQL                        : 
+    alter table if exists quiz_submissions 
+       add constraint FK5fbfm6lgxprfc8y4ke1xpl4mf 
+       foreign key (student_id) 
+       references users
+Hibernate: 
+    alter table if exists quiz_submissions 
+       add constraint FK5fbfm6lgxprfc8y4ke1xpl4mf 
+       foreign key (student_id) 
+       references users
+2025-12-29T18:54:19.372+05:00 DEBUG 67245 --- [learning-platform] [           main] org.hibernate.SQL                        : 
+    alter table if exists quizzes 
+       add constraint FKnqw01g1df6iqh97ijywvvv51d 
+       foreign key (module_id) 
+       references modules
+Hibernate: 
+    alter table if exists quizzes 
+       add constraint FKnqw01g1df6iqh97ijywvvv51d 
+       foreign key (module_id) 
+       references modules
+2025-12-29T18:54:19.374+05:00 DEBUG 67245 --- [learning-platform] [           main] org.hibernate.SQL                        : 
+    alter table if exists submissions 
+       add constraint FKrirbb44savy2g7nws0hoxs949 
+       foreign key (assignment_id) 
+       references assignments
+Hibernate: 
+    alter table if exists submissions 
+       add constraint FKrirbb44savy2g7nws0hoxs949 
+       foreign key (assignment_id) 
+       references assignments
+2025-12-29T18:54:19.376+05:00 DEBUG 67245 --- [learning-platform] [           main] org.hibernate.SQL                        : 
+    alter table if exists submissions 
+       add constraint FK3p6y8mnhpwusdgqrdl4hcl72m 
+       foreign key (student_id) 
+       references users
+Hibernate: 
+    alter table if exists submissions 
+       add constraint FK3p6y8mnhpwusdgqrdl4hcl72m 
+       foreign key (student_id) 
+       references users
+2025-12-29T18:54:19.378+05:00  INFO 67245 --- [learning-platform] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-29T18:54:21.079+05:00  INFO 67245 --- [learning-platform] [           main] com.learning.platform.ContextLoadTest    : Started ContextLoadTest in 3.355 seconds (process running for 31.247)
+]]></system-out>
+  </testcase>
+</testsuite>

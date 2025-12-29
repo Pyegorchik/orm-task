@@ -1,0 +1,9 @@
+/home/pyegor/study/learning-platform/src/test/java/com/learning/platform/ContextLoadTest.java
+/home/pyegor/study/learning-platform/src/test/java/com/learning/platform/service/CourseServiceUnitService.java
+/home/pyegor/study/learning-platform/src/test/java/com/learning/platform/SimpleRepositoryTest.java
+/home/pyegor/study/learning-platform/src/test/java/com/learning/platform/util/TestUtils.java
+/home/pyegor/study/learning-platform/src/test/java/com/learning/platform/LearningPlatformIntegrationTest.java
+/home/pyegor/study/learning-platform/src/test/java/com/learning/platform/service/EnrollmentServiceIntergrationalTest.java
+/home/pyegor/study/learning-platform/src/test/java/com/learning/platform/LazyLoadingIntergrationalTest.java
+/home/pyegor/study/learning-platform/src/test/java/com/learning/platform/service/CourseServiceIntegrationalTest.java
+/home/pyegor/study/learning-platform/src/test/java/com/learning/platform/NoContextTest.java

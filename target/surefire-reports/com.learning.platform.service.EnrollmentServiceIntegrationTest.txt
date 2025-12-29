@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.learning.platform.service.EnrollmentServiceIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.097 s - in com.learning.platform.service.EnrollmentServiceIntegrationTest

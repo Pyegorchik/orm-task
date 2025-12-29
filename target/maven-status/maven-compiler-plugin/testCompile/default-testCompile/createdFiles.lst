@@ -1,0 +1,9 @@
+com/learning/platform/LazyLoadingTest.class
+com/learning/platform/util/TestUtils.class
+com/learning/platform/service/CourseServiceUnitTest.class
+com/learning/platform/SimpleRepositoryTest.class
+com/learning/platform/NoContextTest.class
+com/learning/platform/ContextLoadTest.class
+com/learning/platform/LearningPlatformIntegrationTest.class
+com/learning/platform/service/CourseServiceIntegrationTest.class
+com/learning/platform/service/EnrollmentServiceIntegrationTest.class
